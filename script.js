@@ -1,11 +1,26 @@
-var d = new Date();
-var mouth = new Date(d).getMonth() + 1
-const date = d.toDateString()
-const date2 = d.getDate()+'/'+mouth +'/'+d.getFullYear()
-let body = document.getElementById('body');
-meuStorage = localStorage;
-document.getElementById('date').innerHTML = date2
+//Date
+function formatDate(date = new Date()) {
+  var day = date.getDate();
+  var mouth = date.getMonth() + 1;
+  var year = date.getFullYear();
+  if(day.toString().length == 1) day = '0' + day;
+  if(mouth.toString().length == 1) mouth = '0' + mouth;
+  return day+'/'+mouth+'/'+year
+}
+document.getElementById('date').innerHTML = formatDate()
+//Hour
+function formatHour(hours = new Date()) {
+  var hour = hours.getHours()
+  var minutes = hours.getMinutes()
 
+  if(hour.toString().length == 1) hour = '0'+ hour
+  if(minutes.toString().length == 1) minutes = '0'+ minutes
+  return hour+':'+minutes;
+}
+document.getElementById('hour').innerHTML = formatHour()
+
+//Adjust background
+meuStorage = localStorage;
 meuStorage.getItem('reso') ? height = parseInt(meuStorage.getItem('reso')) : height = 100
 body.style.height = height + 'vh';
 function downFunction(){
