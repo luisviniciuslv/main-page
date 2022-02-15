@@ -1,0 +1,98 @@
+
+.date{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    font-size:25px;
+    font-family: '8BITWONDERNominal';
+    font-weight: normal;
+    font-style: normal;
+    color: purple; 
+}
+body{
+    display: flex;
+    flex-direction: center;
+    overflow: hidden;
+    background-image: url("https://cdn.discordapp.com/attachments/916375412949528618/942934365367861308/wallpaperbetter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    
+}  
+.fab{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+  }
+.fab button{
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #cb60b3;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  font-size: 24px;
+  color: white;
+    
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+.fab button:focus{
+    outline: none;
+  }
+  .fab button.main{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #5b19b7;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+  }
+  
+  .fab button.main:before{
+    content: '⬇ ';
+  }
+
+  .fab2{
+    position: fixed;
+    bottom:100px;
+    right:10px;
+  }
+.fab2 button{
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #cb60b3;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  font-size: 24px;
+  color: white;
+    
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+.fab2 button:focus{
+    outline: none;
+  }
+  .fab2 button.main{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #5b19b7;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+  }
+  
+  .fab2 button.main:before{
+    content: '⬆';
+  }
