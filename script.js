@@ -5,19 +5,27 @@ function formatDate(date = new Date()) {
   var year = date.getFullYear();
   if(day.toString().length == 1) day = '0' + day;
   if(mouth.toString().length == 1) mouth = '0' + mouth;
-  return day+'/'+mouth+'/'+year
+  date = day+'/'+mouth+'/'+year
+  document.getElementById('date').innerHTML = date;
 }
-document.getElementById('date').innerHTML = formatDate()
+
 //Hour
 function formatHour(hours = new Date()) {
-  var hour = hours.getHours()
-  var minutes = hours.getMinutes()
+    var hour = hours.getHours()
+    var minutes = hours.getMinutes()
+    var seconds = hours.getSeconds()
+    if(hour.toString().length == 1) hour = '0'+ hour
+    if(minutes.toString().length == 1) minutes = '0'+ minutes
+    if(seconds.toString().length == 1) seconds = '0'+ seconds
+    var Hour = hour+':'+minutes+':'+seconds;
+    document.getElementById('hour').innerHTML = Hour
 
-  if(hour.toString().length == 1) hour = '0'+ hour
-  if(minutes.toString().length == 1) minutes = '0'+ minutes
-  return hour+':'+minutes;
 }
-document.getElementById('hour').innerHTML = formatHour()
+function initTime(){
+  setInterval(formatHour, 1000)
+  setInterval(formatDate, 1000)
+}
+
 
 //Adjust background
 meuStorage = localStorage;
