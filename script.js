@@ -19,8 +19,10 @@ function formatHour(hours = new Date()) {
     if(seconds.toString().length == 1) seconds = '0'+ seconds
     var Hour = hour+':'+minutes+':'+seconds;
     document.getElementById('hour').innerHTML = Hour
-
 }
+
+
+//date and hour
 function initTime(){
   setInterval(formatHour, 1000)
   setInterval(formatDate, 1000)
