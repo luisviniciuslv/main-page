@@ -1,4 +1,3 @@
-
 .date{
     position: relative;
     display: flex;
@@ -10,61 +9,26 @@
     font-style: normal;
     color: purple; 
 }
+
 body{
     display: flex;
     flex-direction: center;
     overflow: hidden;
-    background-image: url("https://cdn.discordapp.com/attachments/916375412949528618/942934365367861308/wallpaperbetter.jpg");
+    background-image: url("https://camo.githubusercontent.com/fa5b939796db443aa1e0f8ed376fab85c12b21ff52865e50596f0e7a0545ac9b/68747470733a2f2f696d616765732d7769786d702d6564333061383662386334636138383737373335393463322e7769786d702e636f6d2f662f31326362653861342d663535632d346234302d383562622d6438653134303565376238342f6461746a70317a2d66633330363961342d396666632d343064302d383631622d6135336536613236373633342e6769663f746f6b656e3d65794a30655841694f694a4b563151694c434a68624763694f694a49557a49314e694a392e65794a7a645749694f694a31636d3436595842774f694973496d6c7a63794936496e5679626a7068634841364969776962324a71496a7062573373696347463061434936496c77765a6c77764d544a6a596d5534595451745a6a553159793030596a51774c546731596d49745a44686c4d5451774e575533596a67305843396b59585271634446364c575a6a4d7a41324f5745304c546c6d5a6d4d744e44426b4d4330344e6a46694c5745314d325532595449324e7a597a4e43356e61575969665631644c434a68645751694f6c736964584a754f6e4e6c636e5a70593255365a6d6c735a53356b62336475624739685a434a6466512e45685a3452697a43397a3632393769713243514737573170576c477642554733664b6a5174475649496d51");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
     
-}  
-.fab{
-    position: fixed;
-    bottom:10px;
-    right:10px;
-  }
-.fab button{
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-  border-radius: 30px;
-  background-color: #cb60b3;
-  border: none;
-  box-shadow: 0 1px 5px rgba(0,0,0,.4);
-  font-size: 24px;
-  color: white;
-    
-  -webkit-transition: .2s ease-out;
-  -moz-transition: .2s ease-out;
-  transition: .2s ease-out;
-}
-.fab button:focus{
-    outline: none;
-  }
-  .fab button.main{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background-color: #5b19b7;
-    right: 0;
-    bottom: 0;
-    z-index: 20;
-  }
-  
-  .fab button.main:before{
-    content: '⬇ ';
-  }
+    }
 
-  .fab2{
+
+  .bt1{
     position: fixed;
     bottom:100px;
     right:10px;
   }
-.fab2 button{
+
+.bt1 button{
   cursor: pointer;
   width: 48px;
   height: 48px;
@@ -74,25 +38,67 @@ body{
   box-shadow: 0 1px 5px rgba(0,0,0,.4);
   font-size: 24px;
   color: white;
-    
+
   -webkit-transition: .2s ease-out;
   -moz-transition: .2s ease-out;
   transition: .2s ease-out;
 }
-.fab2 button:focus{
+
+.bt1 button:focus{
     outline: none;
-  }
-  .fab2 button.main{
+}
+
+  .bt1 button.main{
     position: absolute;
     width: 60px;
     height: 60px;
     border-radius: 30px;
-    background-color: #5b19b7;
+    background-color: purple;
     right: 0;
     bottom: 0;
     z-index: 20;
   }
-  
-  .fab2 button.main:before{
+
+  .bt1 button.main:before{
     content: '⬆';
   }
+
+  .bt2{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    }
+
+.bt2 button{
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #cb60b3;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  font-size: 24px;
+  color: white;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.bt2 button:focus{
+    outline: none;
+}
+
+.bt2 button.main{ 
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: purple;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+  .bt2 button.main:before{
+    content: '⬇ ';
+}
