@@ -16,7 +16,6 @@ const gifsafternoon = [
   "https://cdn.discordapp.com/attachments/916375412949528618/943542005374525530/93c094aea344ea0f12a4103044762ae5.gif",
   "https://cdn.discordapp.com/attachments/916375412949528618/943542088803450951/Toyoi-8Bit-Odin-Sphere.gif",
   "https://cdn.discordapp.com/attachments/916375412949528618/943542174514053120/X2mgz1R.gif",
-  ""
 ]
 
 const gifsnight = [
