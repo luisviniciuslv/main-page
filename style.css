@@ -25,93 +25,12 @@
 }
 
 body{
-    display: flex;
-    flex-direction: center;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+  background-size: 100% 100%
     
     }
 
 
-  .bt1{
-    position: fixed;
-    bottom:100px;
-    right:10px;
-  }
-
-.bt1 button{
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-  border-radius: 30px;
-  background-color: #cb60b3;
-  border: none;
-  box-shadow: 0 1px 5px rgba(0,0,0,.4);
-  font-size: 24px;
-  color: white;
-
-  -webkit-transition: .2s ease-out;
-  -moz-transition: .2s ease-out;
-  transition: .2s ease-out;
-}
-
-.bt1 button:focus{
-    outline: none;
-}
-
-  .bt1 button.main{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background-color: purple;
-    right: 0;
-    bottom: 0;
-    z-index: 20;
-  }
-
-  .bt1 button.main:before{
-    content: '⬆';
-  }
-
-  .bt2{
-    position: fixed;
-    bottom:10px;
-    right:10px;
-    }
-
-.bt2 button{
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-  border-radius: 30px;
-  background-color: #cb60b3;
-  border: none;
-  box-shadow: 0 1px 5px rgba(0,0,0,.4);
-  font-size: 24px;
-  color: white;
-  -webkit-transition: .2s ease-out;
-  -moz-transition: .2s ease-out;
-  transition: .2s ease-out;
-}
-
-.bt2 button:focus{
-    outline: none;
-}
-
-.bt2 button.main{ 
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  background-color: purple;
-  right: 0;
-  bottom: 0;
-  z-index: 20;
-}
-
-  .bt2 button.main:before{
-    content: '⬇ ';
-}
+  
