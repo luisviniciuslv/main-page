@@ -38,7 +38,7 @@ if (formatHour() >= parseInt(05) || formatHour() <= parseInt(12)){
 }
 
 if (formatHour() >= parseInt(13) || formatHour() <= parseInt(18)){
-  const numbersgifs = Math.floor(Math.random() * 5);
+  const numbersgifs = Math.floor(Math.random() * 4);
   gif = gifsafternoon[parseInt(numbersgifs)];
   body.style.backgroundImage=`url(${gif})`
 }
