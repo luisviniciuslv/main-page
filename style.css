@@ -1,5 +1,4 @@
 .date{
-    
     position: relative;
     display: flex;
     flex-direction: row;
@@ -9,7 +8,7 @@
     font-family: 'PressStart2PRegular';
     font-weight: normal;
     font-style: normal;
-    color: purple; 
+    color: #A020F0; 
 }
 .hour{
   position: relative;
@@ -18,18 +17,42 @@
   justify-content: flex-start;
   padding: 10px;
   font-size:25px;
-  font-family: 'PressStart2PRegular';
+  font-family: 'PressStart2PRegular'; 
   font-weight: normal;
   font-style: normal;
-  color: purple; 
+  color: #A020F0; 
+}
+.buttons{
+  padding: 6px;
+  font-family: 'PressStart2PRegular'; 
+  font-weight: normal;
+  font-style: normal;
+}
+.button1{
+  font-size:25px;
+  font-family: 'PressStart2PRegular'; 
+  font-weight: normal;
+  font-style: normal;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #A020F0;
+}
+.button2{
+  position: relative;
+  left: 0px;
+  font-size:25px;
+  font-family: 'PressStart2PRegular'; 
+  font-weight: normal;
+  font-style: normal;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #A020F0;
 }
 
 body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100% /*image ocupe all viewport*/
-    
-    }
-
-
-  
+} 

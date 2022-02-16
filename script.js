@@ -29,23 +29,32 @@ const gifsnight = [
   "https://cdn.discordapp.com/attachments/916375412949528618/943333889387159592/tumblr_o1bl5mipVV1trwxuqo1_1280.gif",
   "https://cdn.discordapp.com/attachments/916375412949528618/943332327344451664/tumblr_c0d8f2d80b022e197ceb75edc3fe2457_961d486f_1280.gif"
 ]
-
-if (formatHour() >= parseInt(05) || formatHour() <= parseInt(12)){
+function morning(){
   const numbersgifs = Math.floor(Math.random() * 10);
   gif = gifsmorning[parseInt(numbersgifs)];
-  body.style.backgroundImage=`url(${gif})`
+  body.style.backgroundImage=`url(${gif})`;
 }
-
-if (formatHour() >= parseInt(13) || formatHour() <= parseInt(18)){
+function afternoon(){
   const numbersgifs = Math.floor(Math.random() * 4);
   gif = gifsafternoon[parseInt(numbersgifs)];
   body.style.backgroundImage=`url(${gif})`
 }
-
-if (formatHour() >= parseInt(19) || formatHour() <= parseInt(04)){
+function night(){
   const numbersgifs = Math.floor(Math.random() * 8);
   gif = gifsnight[parseInt(numbersgifs)];
   body.style.backgroundImage=`url(${gif})`
+}
+
+if (formatHour() >= parseInt(05) || formatHour() <= parseInt(12)){
+  morning()
+}
+
+if (formatHour() >= parseInt(13) || formatHour() <= parseInt(18)){
+  afternoon()
+}
+
+if (formatHour() >= parseInt(19) || formatHour() <= parseInt(04)){
+  night()
 }
 
 //Date
@@ -77,20 +86,3 @@ function initTime(){
   setInterval(formatHour, 1000)
   setInterval(formatDate, 1000)
 }
-
-// Adjust background
-// meuStorage = localStorage;
-// meuStorage.getItem('reso') ? height = parseInt(meuStorage.getItem('reso')) : height = 85
-// body.style.height = height + 'vh';
-
-// function downFunction(){
-//   height -= 2
-//   body.style.height = height + 'vh';
-//   localStorage.setItem('reso', height);  
-//  }
-
-// function upFunction(){
-//   height += 2
-//   body.style.height = height + 'vh';
-//   localStorage.setItem('reso', height);  
-// }
