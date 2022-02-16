@@ -27,7 +27,6 @@
 body{
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
   background-size: 100% 100% /*image ocupe all viewport*/
     
     }
